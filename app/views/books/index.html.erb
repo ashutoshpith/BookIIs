@@ -10,8 +10,13 @@
     <tr>
       <td><%= book.bookid %></td>
       <td><%= book.bookname %></td>
+       
       <td><%= link_to 'Show', book_path(book) %></td>
+      <td>-</td> 
+      
        <td><%= link_to 'Edit', edit_book_path(book) %></td>
+      <td>-</td> 
+       
          <td><%= link_to 'Destroy', book_path(book),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
