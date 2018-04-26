@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Bookid: 1
+  Bookname: MyString
+  Bookdate: 2018-04-27
+  Department: MyString
+  Bookprice: 1
+
+two:
+  Bookid: 1
+  Bookname: MyString
+  Bookdate: 2018-04-27
+  Department: MyString
+  Bookprice: 1

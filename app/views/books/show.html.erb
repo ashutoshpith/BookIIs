@@ -1,0 +1,27 @@
+<p>
+  <strong>bookid:</strong>
+  <%= @book.bookid %>
+</p>
+ 
+<p>
+  <strong>bookname:</strong>
+  <%= @book.bookname %>
+</p>
+
+<p>
+  <strong>bookdate:</strong>
+  <%= @book.bookdate %>
+</p>
+ 
+<p>
+  <strong>department:</strong>
+  <%= @book.department %>
+</p>
+
+<p>
+  <strong>bookprice:</strong>
+  <%= @book.bookprice %>
+</p>
+ 
+ <%= link_to 'Edit', edit_book_path(@book) %> 
+ <%= link_to 'Back', books_path %>

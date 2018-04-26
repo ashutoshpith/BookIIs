@@ -1,0 +1,29 @@
+
+<%= form_with scope: :book, url: books_path, local: true do |form| %>
+  <p>
+    <%= form.label :bookid %><br>
+    <%= form.text_field :bookid %>
+  </p>
+ 
+  <p>
+    <%= form.label :bookname %><br>
+    <%= form.text_field :bookname %>
+  </p>
+ 
+  <p>
+    <%= form.label :bookdate %><br>
+    <%= form.date_field :bookdate %>
+  </p>
+   <p>
+    <%= form.label :department %><br>
+    <%= form.text_field :department %>
+  </p>
+  <p>
+    <%= form.label :bookprice %><br>
+    <%= form.text_field :bookprice %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
