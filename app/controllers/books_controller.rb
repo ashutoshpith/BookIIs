@@ -23,6 +23,7 @@ class BooksController < ApplicationController
         @book = Book.new(book_params)
  
         if @book.save
+          flash[:notice] = "Thankyou for submission"          
             redirect_to @book
           else
             render 'new'
