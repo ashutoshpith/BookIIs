@@ -14,6 +14,29 @@
   </head>
 
   <body>
+    <div class="">
+      <%= link_to 'Home',  root_path %>
+      <hr>
+    </div>
+
+<% if !user_signed_in? %>
+<p class="sign_in" ><%= link_to "Login", new_user_session_path %></p>
+<% end %>
+<% if user_signed_in? %>
+
+<p>
+<%= link_to 'Book Library',  books_path %>
+</p>
+<button class="button">
+
+  <%= link_to('LogOut', destroy_user_session_path, :method => :delete) %>
+
+</button>
+
+<% end %>
+
+    <p class="notice"><%= notice %></p>
+     <p class="alert"><%= alert %></p>
   <div class="container">
     <%= yield %>
     </div>

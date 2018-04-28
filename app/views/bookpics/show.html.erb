@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @bookpic.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bookpic.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @bookpic.image %>
+</p>
+
+<%= link_to 'Edit', edit_bookpic_path(@bookpic) %> |
+<%= link_to 'Back', bookpics_path %>
